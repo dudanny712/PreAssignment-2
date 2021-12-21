@@ -1,0 +1,150 @@
+/* all */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Merriweather", serif;
+}
+
+/* Element control */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: rgb(212, 204, 204);
+  text-align: center;
+  color: #fff;
+}
+
+header {
+  background-color: rgb(128, 125, 125);
+  padding: 2rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  font-weight: 300px;
+  color: #fff;
+  margin-bottom: 2rem;
+  margin-right: 5rem;
+}
+
+input,
+button {
+  border: none;
+  outline: none;
+  background: none;
+}
+
+/* form */
+
+#add {
+  display: flex;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#newtaskinput {
+  flex: 1 1 0%;
+  background-color: White;
+  padding: 0.75rem;
+  border-radius: 1rem;
+  margin-right: 1rem;
+  color: black;
+  font-size: 1rem;
+  border-radius: 1rem;
+}
+
+#newtasksubmit {
+  color: black;
+  font-size: 1.125rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-right: 1rem;
+}
+
+#newtasksubmit:hover {
+  opacity: 0.8;
+}
+
+/* Main Section */
+
+main {
+  flex: 1 1 0%;
+  padding: 2rem 1rem;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.tasklist {
+  padding: 1rem;
+  margin-right: 5rem;
+}
+
+.tasklist h2 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: black;
+  margin-bottom: 2rem;
+}
+
+#tasks .task {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+
+#tasks .task .content {
+  flex: 1 1 0%;
+}
+
+#tasks .task .content .text {
+  color: black;
+  font-size: 1.125rem;
+  width: 100%;
+  display: block;
+}
+
+#tasks .task .actions {
+  display: flex;
+  margin: 0 -0.05rem;
+}
+
+.task .actions button {
+  cursor: pointer;
+  margin: 0 0.5rem;
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+.task .actions button:hover {
+  opacity: 0.8;
+}
+
+.task .actions button:active {
+  opacity: 0.6;
+}
+
+.task .actions .delete {
+  color: crimson;
+}
+
+.content .tasktext {
+  color: #555;
+  margin-right: 18rem;
+}
+
+.deleteAll {
+  margin-right: 5rem;
+  background-color: none;
+  border: 2px solid black;
+  padding: 1rem;
+  color: black;
+  border-radius: 1rem;
+}
